@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Plus Jakarta Sans", "Noto Sans Arabic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "EB Garamond", serif;
+  --font-mono: "Inter", "Plus Jakarta Sans", sans-serif;
+  
+  --color-brand-bg: #F9FAFB;
+  --color-brand-navy: #0A3A6B;
+  --color-brand-charcoal: #111827;
+  --color-brand-gold: #0A3A6B;
+}
+
+body {
+  background-color: #F9FAFB;
+  color: #111827;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Luxury animation utilities */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(400%); }
+}
+
+.scan-anim {
+  animation: scanline 4s linear infinite;
+}
+
+.selected-glow {
+  background: radial-gradient(circle at center, color-mix(in srgb, var(--color-brand-gold) 6%, transparent) 0%, transparent 100%);
+}
+
+.glass-panel {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Mirror animations in RTL */
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* Enhanced Arabic Typography & Clarity */
+[dir="rtl"] {
+  font-family: 'Noto Sans Arabic', 'Inter', sans-serif;
+}
+
+[dir="rtl"] p,
+[dir="rtl"] span,
+[dir="rtl"] button,
+[dir="rtl"] input,
+[dir="rtl"] label,
+[dir="rtl"] div {
+  line-height: 1.7;
+}
+
+[dir="rtl"] .font-mono {
+  letter-spacing: 0px !important;
+  font-weight: 500;
+}
+
+[dir="rtl"] .text-\[9px\], 
+[dir="rtl"] .text-\[10px\] {
+  font-size: 12px !important;
+}
+
+[dir="rtl"] .text-\[11px\] {
+  font-size: 13.5px !important;
+}
+
+[dir="rtl"] .text-\[12px\] {
+  font-size: 14.5px !important;
+}
+
+[dir="rtl"] .text-\[12\.5px\] {
+  font-size: 15px !important;
+}
+
+[dir="rtl"] .text-\[13px\] {
+  font-size: 15.5px !important;
+}
+
+[dir="rtl"] .text-\[14px\] {
+  font-size: 16.5px !important;
+}
+
+[dir="rtl"] .text-\[15px\] {
+  font-size: 17.5px !important;
+}
+
+[dir="rtl"] .text-\[16px\] {
+  font-size: 18.5px !important;
+}
+
+[dir="rtl"] .text-\[18px\] {
+  font-size: 20px !important;
+}
+
+[dir="rtl"] .text-\[20px\] {
+  font-size: 22px !important;
+}

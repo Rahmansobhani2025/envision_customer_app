@@ -1,0 +1,10 @@
+{
+  "name": "Remix Envision Eyewear Updated workflow and look",
+  "description": "High-converting optical boutique sales funnel designed to drive foot-traffic: reserves AI-matched frames for in-store VIP try-ons with instant 10% in-store discount vouchers and optometrist appointments.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
